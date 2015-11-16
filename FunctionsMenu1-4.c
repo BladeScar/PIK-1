@@ -23,12 +23,14 @@ double Average(int a, int b, int c)
 //ax^2+bx+c=0
 void func(int a, int b, int c)
 {
+    // what is the point of passing an int if you are using it only as a double
     printf("%dx^2+%dx+%d=0\n", a, b, c);
     double disc;
     double x1, x2;
     disc=(double)b*(double)b-4*(double)a*(double)c;
     printf("disc=%g\n", disc);
 
+    // brackets
     if(disc<0) printf("negative discriminant-> no x\n");
     else{
     x1=(-(double)b+sqrt(disc))/(2*(double)a);
@@ -42,6 +44,7 @@ int main()
 {
     int a, b, c, choise, sum, min;
     double avg;
+    //new lines
     printf("a = "); scanf("%d", &a);
     printf("b = "); scanf("%d", &b);
     printf("c = "); scanf("%d", &c);
